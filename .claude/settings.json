@@ -1,0 +1,59 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**/.claude/**)",
+      "Read(**/CLAUDE.md)",
+      "Read(**/README.md)",
+      "Read(**/*.md)",
+      "Glob(**)",
+      "Grep(**)",
+      "Write(.claude/**)",
+      "Edit(.claude/**)",
+      "TodoWrite",
+      "Bash(cat **)",
+      "Bash(ls **)",
+      "Bash(git status)",
+      "Bash(git log **)",
+      "Bash(git diff **)",
+      "Bash(git show **)",
+      "Bash(find .claude/** **)",
+      "mcp__ADO_MCP_SERVER__get_work_item",
+      "mcp__ADO_MCP_SERVER__get_sprint_work_items",
+      "mcp__ADO_MCP_SERVER__get_work_item_type_fields",
+      "mcp__ADO_MCP_SERVER__search_work_items",
+      "mcp__ADO_MCP_SERVER__search_work_items_by_user",
+      "mcp__ADO_MCP_SERVER__search_wiki",
+      "mcp__ADO_MCP_SERVER__list_projects",
+      "mcp__ADO_MCP_SERVER__list_project_teams",
+      "mcp__ADO_MCP_SERVER__get_identity_ids",
+      "mcp__FIGMA_MCP__*"
+    ]
+  },
+  "hooksDirectory": ".claude/hooks",
+  "agents": {
+    "story-reviewer": {
+      "model": "sonnet",
+      "description": "Reviews user stories for technical feasibility and quality",
+      "preloadContext": [
+        ".claude/PROJECT_CONTEXT.md",
+        ".claude/ARCHITECTURE.md"
+      ]
+    },
+    "story-generator": {
+      "model": "sonnet",
+      "description": "Generates user stories with acceptance criteria"
+    },
+    "feature-slicer": {
+      "model": "sonnet",
+      "description": "Breaks down features into user stories",
+      "preloadContext": [
+        ".claude/PROJECT_CONTEXT.md"
+      ]
+    }
+  },
+  "performance": {
+    "cacheContextFiles": true,
+    "parallelToolCalls": true,
+    "useHaikuForRouting": true
+  }
+}

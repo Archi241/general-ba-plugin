@@ -1,0 +1,7 @@
+[
+  {
+    "name": "setup-ba-plugin",
+    "command": "bash",
+    "args": ["-c", "echo '✅ BA Plugin detected! Legal Tracker context files ready in .claude/' && ls .claude/*.md 2>/dev/null"]
+  }
+]

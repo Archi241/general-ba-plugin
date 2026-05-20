@@ -1,0 +1,7 @@
+{
+  "review-story": "echo '🚀 Pre-loading context files...' && cat .claude/PROJECT_CONTEXT.md .claude/ARCHITECTURE.md > /dev/null 2>&1 || true",
+  "story": "echo '🚀 Pre-loading context files...' && cat .claude/PROJECT_CONTEXT.md .claude/ARCHITECTURE.md > /dev/null 2>&1 || true",
+  "slice": "echo '🚀 Pre-loading context files...' && cat .claude/PROJECT_CONTEXT.md .claude/ARCHITECTURE.md > /dev/null 2>&1 || true",
+  "analyze-transcript": "echo '🚀 Pre-loading context files...' && cat .claude/PROJECT_CONTEXT.md .claude/ARCHITECTURE.md > /dev/null 2>&1 || true",
+  "analyze-requirements": "echo '🚀 Pre-loading context files...' && cat .claude/PROJECT_CONTEXT.md .claude/ARCHITECTURE.md > /dev/null 2>&1 || true"
+}
