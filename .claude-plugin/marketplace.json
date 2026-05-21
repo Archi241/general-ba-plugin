@@ -1,34 +1,29 @@
 {
   "name": "general-ba-plugin",
-  "displayName": "General BA Plugin",
-  "version": "1.0.0",
-  "description": "Universal Business Analysis plugin for Claude Code with 12 specialized skills for requirements analysis, user story generation, and workflow automation",
-  "author": "Archi241",
-  "repository": "https://github.com/Archi241/general-ba-plugin",
-  "homepage": "https://github.com/Archi241/general-ba-plugin/blob/main/README.md",
-  "license": "MIT",
-  "keywords": [
-    "business-analyst",
-    "user-stories",
-    "requirements",
-    "diagrams",
-    "prototypes"
-  ],
-  "skills": [
-    "skills/ba",
-    "skills/story",
-    "skills/slice",
-    "skills/review-story",
-    "skills/analyze-requirements",
-    "skills/analyze-transcript",
-    "skills/api-docs",
-    "skills/diagram",
-    "skills/prototype",
-    "skills/code-qa",
-    "skills/ux-assessment",
-    "skills/audit-skills"
-  ],
-  "requirements": {
-    "claudeCode": ">=1.0.0"
-  }
+  "owner": {
+    "name": "Archi241"
+  },
+  "plugins": [
+    {
+      "name": "general-ba-plugin",
+      "displayName": "General BA Plugin",
+      "version": "1.0.0",
+      "description": "Universal Business Analysis plugin for Claude Code with 12 specialized skills for requirements analysis, user story generation, and workflow automation",
+      "source": ".",
+      "skills": [
+        "skills/ba",
+        "skills/story",
+        "skills/slice",
+        "skills/review-story",
+        "skills/analyze-requirements",
+        "skills/analyze-transcript",
+        "skills/api-docs",
+        "skills/diagram",
+        "skills/prototype",
+        "skills/code-qa",
+        "skills/ux-assessment",
+        "skills/audit-skills"
+      ]
+    }
+  ]
 }
