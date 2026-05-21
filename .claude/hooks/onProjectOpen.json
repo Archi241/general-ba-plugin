@@ -1,7 +1,0 @@
-[
-  {
-    "name": "ba-plugin-init",
-    "command": "bash",
-    "args": ["-c", "ba/scripts/init-ba-plugin.sh"]
-  }
-]
